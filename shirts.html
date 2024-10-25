@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Eclipse Couture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Eclipse Couture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contanct.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="IMG-20241021-WA0258.jpg" alt="Product Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h1>Men Striped Shirt </h1>
+                <p>Price: $18.00</p>
+                <p>Collar Streetwear Short Sleeve Button Casual Camisa Hombre Leisure Fashion Top.</p>
+                <button class="btn btn-primary" id="add-to-cart" data-product-id="1" data-product-name="Men's Striped shirt" data-product-price="15.00">Add to Cart</button>
+            </div>
+        </div>
+
+       
+        <div class="mt-4">
+            <h3>More On Hats</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0260.jpg" alt="Shirt View 1" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('shirt-1')">Add to Cart</button>
+                    <div id="shirt-1" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-shirt-1" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('shirt-1')">Confirm</button>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0261.jpg" alt="Shirt View 2" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('shirt-2')">Add to Cart</button>
+                    <div id="shirt-2" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-shirt-2" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('shirt-2')">Confirm</button>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0262.jpg" alt="Shirt View 3" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('shirt-3')">Add to Cart</button>
+                    <div id="shirt-3" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-shirt-3" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('shirt-3')">Confirm</button>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0267.jpg" alt="Shirt View 4" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('shirt-4')">Add to Cart</button>
+                    <div id="shirt-4" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-shirt-4" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('shirt-4')">Confirm</button>
+                    </div>
+                </div>
+            
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0264.jpg" alt="Shirt View 5" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('shirt-5')">Add to Cart</button>
+                    <div id="shirt-5" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-shirt-5" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('shirt-5')">Confirm</button>
+                    </div>
+                </div>
+            
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0266.jpg" alt="Shirt View 6" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('shirt-6')">Add to Cart</button>
+                    <div id="shirt-6" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-shirt-6" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('shirt-6')">Confirm</button>
+                    </div>
+                </div>
+            
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0270.jpg" alt="Shirt View 7" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('shirt-7')">Add to Cart</button>
+                    <div id="shirt-7" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-shirt-7" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('shirt-7')">Confirm</button>
+                    </div>
+                </div>
+            
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0269.jpg" alt="Shirt View 8" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('shirt-8')">Add to Cart</button>
+                    <div id="shirt-8" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-shirt-8" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('shirt-8')">Confirm</button>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                // Function to show quantity input for the selected shirt
+                function showQuantityInput(shirtId) {
+                    const quantityInputDiv = document.getElementById(shirtId);
+                    if (quantityInputDiv.style.display === "none") {
+                        quantityInputDiv.style.display = "block";
+                    } else {
+                        quantityInputDiv.style.display = "none";
+                    }
+                }
+            
+                // Function to handle adding to cart
+                function addToCart(shirtId) {
+                    const quantity = document.getElementById(`quantity-${shirtId}`).value;
+                    alert(`Added ${quantity} of ${shirtId} to cart!`);
+                    // Add additional logic for cart handling here
+                }
+            </script>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 bg-light">
+        <p>&copy; 2024 Eclipse Couture. All rights reserved.</p>
+        <p> MASIMBA MTISI H230106V</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add product to localStorage cart
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                id: this.dataset.productId,
+                name: this.dataset.productName,
+                price: this.dataset.productPrice
+            };
+
+            // Add product to the cart array
+            cart.push(product);
+
+            // Save updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert('Product added to cart!');
+        });
+       
+    </script>
+</body>
+</html>

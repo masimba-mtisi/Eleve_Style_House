@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Eclipse Couture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Eclipse Couture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contanct.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="IMG-20241021-WA0239.jpg" alt="Product Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h1>Handmade Men's Chelsea Dark Brown Patina Leather Dressy Ankle High Jumper Boots</h1>
+                <p>Price: $50.00</p>
+                <p>Handcrafted with premium dark brown patina leather, these sleek Chelsea boots exude sophistication. Featuring an elastic side panel for easy slip-on, ankle-high design, and stacked heel, they combine comfort with refined style.</p>
+                <button class="btn btn-primary" id="add-to-cart" data-product-id="1" data-product-name="Handmade Men's boots" data-product-price="50.00">Add to Cart</button>
+            </div>
+        </div>
+
+       
+        <div class="mt-4">
+            <h3>More On Hats</h3>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0215.jpg" alt="Shoes View 1" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="addToCart('Shoes View 1')">Add to Cart</button>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0243.jpg" alt="Shoes View 2" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="addToCart('Shoes View 2')">Add to Cart</button>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0229.jpg" alt="Shoes View 3" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="addToCart('Shoes View 3')">Add to Cart</button>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0241.jpg" alt="Shoes View 4" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="addToCart('Shoes View 4')">Add to Cart</button>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0224.jpg" alt="Shoes View 5" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="addToCart('Shoes View 5')">Add to Cart</button>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0218.jpg" alt="Shoes View 6" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="addToCart('Shoes View 6')">Add to Cart</button>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0229.jpg" alt="Shoes View 7" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="addToCart('Shoes View 7')">Add to Cart</button>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0238.jpg" alt="Shoes View 8" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="addToCart('Shoes View 8')">Add to Cart</button>
+                </div>
+            </div>
+            
+            <script>
+                function addToCart(shoeName) {
+                    // Example logic for adding to cart
+                    alert(shoeName + ' has been added to your cart!');
+                    // Here you can add the logic to actually add the item to the cart
+                }
+            </script>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 bg-light">
+        <p>&copy; 2024 Eclipse Couture. All rights reserved.</p>
+        <p> MASIMBA MTISI H230106V</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add product to localStorage cart
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                id: this.dataset.productId,
+                name: this.dataset.productName,
+                price: this.dataset.productPrice
+            };
+
+            // Add product to the cart array
+            cart.push(product);
+
+            // Save updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert('Product added to cart!');
+        });
+    </script>
+</body>
+</html>
