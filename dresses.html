@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Eclipse Couture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Eclipse Couture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contanct.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="IMG-20241021-WA0213.jpg" alt="Product Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h1>Angashion Women's Dresses</h1>
+                <p>Price: $10.00</p>
+                <p> Features lightweight, breathable fabrics and vibrant colors in flowy designs. Perfect for warm weather, these sundresses offer effortless style and comfort for beach trips, picnics, or everyday summer wear.</p>
+                <button class="btn btn-primary" id="add-to-cart" data-product-id="1" data-product-name="Summer dress" data-product-price="10.00">Add to Cart</button>
+            </div>
+        </div>
+
+       
+        <div class="mt-4">
+            <h3>More On Hats</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0208.jpg" alt="Dresses View 1" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('dress-1')">Add to Cart</button>
+                    <div id="dress-1" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-dress-1" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('dress-1')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0210.jpg" alt="Dresses View 2" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('dress-2')">Add to Cart</button>
+                    <div id="dress-2" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-dress-2" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('dress-2')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0211.jpg" alt="Dresses View 3" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('dress-3')">Add to Cart</button>
+                    <div id="dress-3" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-dress-3" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('dress-3')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0214.jpg" alt="Dresses View 4" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('dress-4')">Add to Cart</button>
+                    <div id="dress-4" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-dress-4" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('dress-4')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0205.jpg" alt="Dresses View 5" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('dress-5')">Add to Cart</button>
+                    <div id="dress-5" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-dress-5" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('dress-5')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0198.jpg" alt="Dresses View 6" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('dress-6')">Add to Cart</button>
+                    <div id="dress-6" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-dress-6" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('dress-6')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0207.jpg" alt="Dresses View 7" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('dress-7')">Add to Cart</button>
+                    <div id="dress-7" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-dress-7" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('dress-7')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0210.jpg" alt="Dresses View 8" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('dress-8')">Add to Cart</button>
+                    <div id="dress-8" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-dress-8" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('dress-8')">Confirm</button>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                function showQuantityInput(dressId) {
+                    const inputDiv = document.getElementById(dressId);
+                    inputDiv.style.display = inputDiv.style.display === "none" ? "block" : "none";
+                }
+            
+                function addToCart(dressId) {
+                    const quantityInput = document.getElementById(`quantity-${dressId}`);
+                    const quantity = quantityInput.value;
+                    
+                    // Placeholder alert to show the quantity added to cart
+                    alert(`Added ${quantity} of ${dressId} to the cart!`);
+                    
+                    // Here you can implement actual cart logic to store the items in the cart
+                }
+            </script>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 bg-light">
+        <p>&copy; 2024 Eclipse Couture. All rights reserved.</p>
+        <p> MASIMBA MTISI H230106V</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add product to localStorage cart
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                id: this.dataset.productId,
+                name: this.dataset.productName,
+                price: this.dataset.productPrice
+            };
+
+            // Add product to the cart array
+            cart.push(product);
+
+            // Save updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert('Product added to cart!');
+        });
+    </script>
+</body>
+</html>

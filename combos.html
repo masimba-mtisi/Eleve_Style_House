@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Eclipse Couture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Eclipse Couture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contanct.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="IMG-20241021-WA0183.jpg" alt="Product Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h1>3 way combination</h1>
+                <p>Price: $60.00</p>
+                <button class="btn btn-primary" id="add-to-cart" data-product-id="1" data-product-name="Stylish Hat" data-product-price="15.00">Add to Cart</button>
+            </div>
+        </div>
+
+       
+        <div class="mt-4">
+            <h3>More On Hats</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0178.jpg" alt="Combos View 1" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('combos-1')">Add to Cart</button>
+                    <div id="combos-1" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-combos-1" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('combos-1')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0179.jpg" alt="Combos View 2" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('combos-2')">Add to Cart</button>
+                    <div id="combos-2" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-combos-2" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('combos-2')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0176.jpg" alt="Combos View 2" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('combos-2')">Add to Cart</button>
+                    <div id="combos-2" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-combos-2" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('combos-2')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0177.jpg" alt="Combos View 3" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('combos-3')">Add to Cart</button>
+                    <div id="combos-3" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-combos-3" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('combos-3')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0180.jpg" alt="Combos View 4" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('combos-4')">Add to Cart</button>
+                    <div id="combos-4" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-combos-4" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('combos-4')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="IMG-20241021-WA0181.jpg" alt="Combos View 5" class="img-fluid">
+                    <button class="btn btn-primary mt-2 w-100" onclick="showQuantityInput('combos-5')">Add to Cart</button>
+                    <div id="combos-5" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-combos-5" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2 w-100" onclick="addToCart('combos-5')">Confirm</button>
+                    </div>
+                </div>                    
+            </div>
+            
+            <script>
+                // Function to show quantity input
+                function showQuantityInput(comboId) {
+                    const quantityInput = document.getElementById(comboId);
+                    quantityInput.style.display = quantityInput.style.display === "none" ? "block" : "none";
+                }
+            
+                // Function to handle adding to cart
+                function addToCart(comboId) {
+                    const quantity = document.getElementById(`quantity-${comboId}`).value;
+                    // Implement your logic to add the item to the cart with the specified quantity
+                    alert(`Added ${quantity} of ${comboId} to the cart!`);
+                }
+            </script>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 bg-light">
+        <p>&copy; 2024 Eclipse Couture. All rights reserved.</p>
+        <p> MASIMBA MTISI H230106V</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add product to localStorage cart
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                id: this.dataset.productId,
+                name: this.dataset.productName,
+                price: this.dataset.productPrice
+            };
+
+            // Add product to the cart array
+            cart.push(product);
+
+            // Save updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert('Product added to cart!');
+        });
+    </script>
+</body>
+</html>

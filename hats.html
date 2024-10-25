@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Eclipse Couture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Eclipse Couture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contanct.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Hommes femmes hiver coton uni plat chapeau extérieur béret chapeau - Gris foncé.jpg" alt="Product Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h1>Hommes femmes hiver coton uni plat chapeau extérieur béret chapeau</h1>
+                <p>Price: $15.00</p>
+                <p>The gray, unisex cotton beret is perfect for winter. Suitable for casual outings, everyday wear, and outdoor activities, its versatile style complements coats, jeans, boots, and dressier attire, making it a great accessory for any winter occasion.</p>
+                <button class="btn btn-primary" id="add-to-cart" data-product-id="1" data-product-name="Stylish Hat" data-product-price="15.00">Add to Cart</button>
+            </div>
+        </div>
+
+       
+        <div class="mt-4">
+            <h3>More On Hats</h3>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0116.jpg" alt="Hat View 1" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="showQuantityInput('hat-1')">Add to Cart</button>
+                    <div id="hat-1" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-hat-1" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2" onclick="addToCart('hat-1')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0072.jpg" alt="Hat View 2" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="showQuantityInput('hat-2')">Add to Cart</button>
+                    <div id="hat-2" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-hat-2" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2" onclick="addToCart('hat-2')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0117.jpg" alt="Hat View 3" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="showQuantityInput('hat-3')">Add to Cart</button>
+                    <div id="hat-3" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-hat-3" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2" onclick="addToCart('hat-3')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0118.jpg" alt="Hat View 4" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="showQuantityInput('hat-4')">Add to Cart</button>
+                    <div id="hat-4" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-hat-4" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2" onclick="addToCart('hat-4')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0119.jpg" alt="Hat View 5" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="showQuantityInput('hat-5')">Add to Cart</button>
+                    <div id="hat-5" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-hat-5" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2" onclick="addToCart('hat-5')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0121.jpg" alt="Hat View 6" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="showQuantityInput('hat-6')">Add to Cart</button>
+                    <div id="hat-6" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-hat-6" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2" onclick="addToCart('hat-6')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="Men's New York Yankees New Era Brown 1999 World Series Pink Undervisor 59FIFTY Fitted Hat.jpg" alt="Hat View 7" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="showQuantityInput('hat-7')">Add to Cart</button>
+                    <div id="hat-7" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-hat-7" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2" onclick="addToCart('hat-7')">Confirm</button>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="IMG-20241021-WA0122.jpg" alt="Hat View 8" class="img-fluid">
+                    <button class="btn btn-primary mt-2" onclick="showQuantityInput('hat-8')">Add to Cart</button>
+                    <div id="hat-8" class="quantity-input mt-2" style="display:none;">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity-hat-8" min="1" value="1" class="form-control">
+                        <button class="btn btn-success mt-2" onclick="addToCart('hat-8')">Confirm</button>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                function showQuantityInput(hatId) {
+                    const inputDiv = document.getElementById(hatId);
+                    inputDiv.style.display = inputDiv.style.display === 'none' ? 'block' : 'none';
+                }
+            
+                function addToCart(hatId) {
+                    const quantityInput = document.getElementById(`quantity-${hatId}`);
+                    const quantity = quantityInput.value;
+                    alert(`Added ${quantity} of ${hatId} to cart!`);
+                    // Here you would typically add the item to your cart logic
+                    // For example, updating a cart object or sending the data to a backend server
+                }
+            </script>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 bg-light">
+        <p>&copy; 2024 Eclipse Couture. All rights reserved.</p>
+        <p> MASIMBA MTISI H230106V</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add product to localStorage cart
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                id: this.dataset.productId,
+                name: this.dataset.productName,
+                price: this.dataset.productPrice
+            };
+
+            // Add product to the cart array
+            cart.push(product);
+
+            // Save updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert('Product added to cart!');
+        });
+    </script>
+</body>
+</html>

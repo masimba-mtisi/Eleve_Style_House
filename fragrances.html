@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Eclipse Couture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Eclipse Couture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contanct.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="IMG-20241021-WA0175.jpg" alt="Product Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h1>Dior Sauvage Eau de Parfum 3.4 oz Men's Fragrance, Fresh & Spicy.</h1>
+                <p>Price: $45.00</p>
+                <p>A fresh and spicy men's fragrance, blending top notes of bergamot and lavender with ambroxan and vetiver for a bold, energetic scent. This 3.4 oz bottle captures the essence of wild freedom, perfect for everyday wear.</p>
+                <button class="btn btn-primary" id="add-to-cart" data-product-id="1" data-product-name="Sauvage Dior" data-product-price="45.00">Add to Cart</button>
+            </div>
+        </div>
+
+       
+        <div class="mt-4">
+            <h3>More On Hats</h3>
+            <div class="row">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragrance Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #cart-message {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+<div id="cart-message">Item added to cart</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0152.jpg" alt="Fragrance View 1" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-1')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0157.jpg" alt="Fragrance View 2" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-2')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0167.jpg" alt="Fragrance View 3" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-3')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0170.jpg" alt="Fragrance View 4" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-4')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0156.jpg" alt="Fragrance View 4" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-4')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0174.jpg" alt="Fragrance View 4" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-4')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0171.jpg" alt="Fragrance View 4" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-4')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0172.jpg" alt="Fragrance View 4" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-4')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0151.jpg" alt="Fragrance View 4" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-4')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0162.jpg" alt="Fragrance View 4" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-4')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0161.jpg" alt="Fragrance View 4" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-4')">Add to Cart</button>
+    </div>
+    <div class="col-md-3">
+        <img src="IMG-20241021-WA0160.jpg" alt="Fragrance View 4" class="img-fluid">
+        <button class="btn btn-primary mt-2 w-100" onclick="addToCart('fragrance-4')">Add to Cart</button>
+    </div>
+    <!-- Add other items as needed -->
+</div>
+
+<script>
+    function addToCart(itemId) {
+        // Code to add the item to the cart (not shown here)
+        
+        // Display the cart message
+        const cartMessage = document.getElementById('cart-message');
+        cartMessage.style.display = 'block';
+        
+        // Hide the message after 2 seconds
+        setTimeout(() => {
+            cartMessage.style.display = 'none';
+        }, 2000);
+    }
+</script>
+
+</body>
+</html>
+
+                    
+                
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 bg-light">
+        <p>&copy; 2024 Eclipse Couture. All rights reserved.</p>
+        <p> MASIMBA MTISI H230106V</p>
+    </footer>
